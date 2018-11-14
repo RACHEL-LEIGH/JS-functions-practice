@@ -1,0 +1,13 @@
+/*Write a function called `laugh` with a parameter named `num` that represents the number of "ha"s to return.*/
+ 
+function laugh(num) {
+    var laughLength = '';
+    for(var i = 0; i < num; i++) {
+        laughLength += 'ha';
+    }
+    return laughLength + '!';
+}
+console.log(laugh(3));
+
+//Prints "hahaha!"
+
