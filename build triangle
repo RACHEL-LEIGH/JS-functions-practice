@@ -1,0 +1,38 @@
+
+/*Create a function that accepts an input (a triangle at its widest width) & returns 
+the string representation (****) of a triangle. */
+
+function makeLine(length) {
+    var line = "";
+    for (var j = 1; j <= length; j++) {
+        line += "* ";
+    }
+    return line + "\n";
+}
+
+
+function buildTriangle(num){
+    var triangle="";
+    for (var i = 1;i <= num; i++){
+        var make = makeLine(i);
+        triangle += make;
+    }
+    return triangle;
+}
+
+console.log(buildTriangle(10));
+
+/* OUTPUT:
+
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * * * 
+* * * * * * * 
+* * * * * * * * 
+* * * * * * * * * 
+* * * * * * * * * * 
+
+*/
